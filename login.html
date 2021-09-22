@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cegep</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="full-page">
+    <div class="sub-page">
+      <div class="navigation-bar">
+        <div class="logo">
+          <a >Cegep Project</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <div class="form-box">
+            <div class="form">
+              <form id="loginForm"class="login-form">
+                <center>
+                  <h1 class="main-heading">Login Form</h1>
+                </center>
+                <input id="username" type="text" placeholder="user name" />
+                <input id="password" type="password" placeholder="password" />
+                <button onclick="loginSubmit()">LOGIN</button>
+                <p class="message">Not Registered? <a onclick="displayRegisterForm()" href="#">Register</a></p>
+              </form>
+              <form id="registerForm"class="register-form">
+                <center>
+                  <h1 class="main-heading">Register Form</h1>
+                </center>
+                <input id="signUsername" type="text" placeholder="user name" />
+                <input id="signEmail" type="text" placeholder="email-id" />
+                <input id="signPassword" type="password" placeholder="password" />
+                <button onclick="signUpSubmit()">REGISTER</button>
+                <p class="message">Already Registered?<a onclick="displayLoginForm()" href="#">Login</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <p id="statement" class='defination'>Login and Registration Form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="first.js">
+  </script>
+</body>
+
+</html>
